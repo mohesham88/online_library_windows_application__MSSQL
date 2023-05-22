@@ -1,4 +1,7 @@
-﻿namespace online_library_mssql
+﻿using System.Data;
+using System.Data.SqlClient;
+
+namespace online_library_mssql
 {
     partial class Form1
     {
@@ -11,6 +14,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+
+        
+        
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -37,9 +44,11 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(60, 180);
+            this.button1.Location = new System.Drawing.Point(261, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(223, 84);
             this.button1.TabIndex = 0;
@@ -49,9 +58,11 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.Brown;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(440, 180);
+            this.button2.Location = new System.Drawing.Point(261, 277);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(223, 84);
             this.button2.TabIndex = 1;
@@ -61,10 +72,13 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(218, 123);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(92, 85);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 15);
+            this.textBox1.Size = new System.Drawing.Size(564, 46);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "welcome to FCAI library system";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);

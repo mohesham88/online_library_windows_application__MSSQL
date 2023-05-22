@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,32 @@ namespace online_library_mssql
 {
     public partial class Form1 : Form
     {
+
+        public static Form1 instance;
+
+        public static string connetionString = "Data Source=LAPTOP-7KOVQQCS;Initial Catalog=library;Integrated Security=True";
+        public static SqlConnection cnn = new SqlConnection(connetionString);
+
+
+
+        public DataTable ExcuteQuery(string query)
+        {
+            DataTable dt = new DataTable();
+            
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(query, cnn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            cnn.Close();
+
+            return dt;
+
+        }
+
         public Form1()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,7 +68,9 @@ namespace online_library_mssql
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            sign_in signIN = new sign_in();
+            signIN.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

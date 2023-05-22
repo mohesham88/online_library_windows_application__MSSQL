@@ -5,8 +5,8 @@ C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssq
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.csproj.SuggestedBindingRedirects.cache
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.Form1.resources
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.Properties.Resources.resources
-C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.sign_up.resources
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.csproj.GenerateResource.cache
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.csproj.CoreCompileInputs.cache
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.exe
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.pdb
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.sign_in.resources

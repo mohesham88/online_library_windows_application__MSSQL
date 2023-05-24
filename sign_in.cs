@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace online_library_mssql
 {
@@ -41,9 +42,25 @@ namespace online_library_mssql
             string query = "SELECT * FROM Users WHERE Email = '" + email + "' AND Password = '" + password + "'";
             DataTable dt = Form1.instance.ExcuteQuery(query);
 
-            if(dt.Rows.Count > 0)
+            if(dt.Rows.Count == 1)
             {
                 MessageBox.Show("Valid email and password");
+
+                /* check if the signed in user is admin or student and navigate them */
+                
+
+                if (dt.Rows[0]["Type"].ToString() == "admin")
+                {
+                    this.Hide();
+                    admin_panel adminPanel = new admin_panel();
+                    adminPanel.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    studentrole strole = new studentrole(email,password);
+                    strole.Show();
+                }
             }
             else
             {

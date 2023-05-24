@@ -75,7 +75,9 @@ namespace online_library_mssql
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            signup sup = new signup();
+            sup.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

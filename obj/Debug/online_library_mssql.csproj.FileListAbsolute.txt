@@ -10,3 +10,8 @@ C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssq
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.exe
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.pdb
 C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.sign_in.resources
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.admin_panel.resources
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.admin_tables.resources
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.signup.resources
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.studentrole.resources
+C:\Users\MOHAMED\source\repos\online_library_mssql\obj\Debug\online_library_mssql.updateStudent.resources
